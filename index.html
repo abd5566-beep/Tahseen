@@ -59,7 +59,7 @@
   .form-group { margin-bottom:18px; }
   label { display:block; font-weight:700; font-size:14px; color:var(--text); margin-bottom:8px; }
   select,input[type="text"] { width:100%; padding:13px 16px; border:2px solid var(--border); border-radius:var(--radius-sm); font-family:'Cairo',sans-serif; font-size:14px; color:var(--text); background:white; transition:border-color 0.2s,box-shadow 0.2s; direction:rtl; appearance:none; -webkit-appearance:none; }
-  input[type="password"] { width:100%; padding:13px 16px; border:2px solid var(--border); border-radius:var(--radius-sm); font-family:'Cairo',sans-serif; font-size:14px; color:var(--text); background:white; transition:border-color 0.2s,box-shadow 0.2s; direction:ltr; text-align:right; appearance:none; -webkit-appearance:none; }
+  input[type="password"] { width:100%; padding:13px 46px 13px 16px; border:2px solid var(--border); border-radius:var(--radius-sm); font-family:'Cairo',sans-serif; font-size:14px; color:var(--text); background:white; transition:border-color 0.2s,box-shadow 0.2s; direction:ltr; text-align:left; appearance:none; -webkit-appearance:none; pointer-events:auto; user-select:text; -webkit-user-select:text; }
   select:focus,input:focus { outline:none; border-color:var(--primary); box-shadow:0 0 0 3px rgba(26,58,110,0.10); }
   .select-wrapper { position:relative; }
   .select-wrapper::after { content:'▼'; position:absolute; left:14px; top:50%; transform:translateY(-50%); font-size:11px; color:var(--text-light); pointer-events:none; }
@@ -138,8 +138,8 @@
   .selected-teacher-header { background:linear-gradient(135deg,var(--primary),var(--primary-light)); color:white; padding:14px 20px; border-radius:var(--radius-sm); margin-bottom:20px; display:flex; align-items:center; gap:12px; font-weight:700; font-size:15px; }
 
   /* PW */
-  .pw-input-wrap { position:relative; display:flex; align-items:center; }
-  .pw-input-wrap input { padding-left:46px; }
+  .pw-input-wrap { position:relative; display:flex; align-items:center; direction:ltr; }
+  .pw-input-wrap input { flex:1; }
   .eye-btn { position:absolute; left:12px; background:none; border:none; cursor:pointer; font-size:17px; padding:0; opacity:0.6; transition:opacity 0.2s; }
   .eye-btn:hover { opacity:1; }
   .pw-strength { margin-top:8px; font-size:12px; font-weight:700; height:18px; }
